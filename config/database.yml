@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: yolonode_development 
+  adapter: postgresql
+  username: yolonode
+  password: <%= ENV['yolonode_DATABASE_PASSWORD'] %>
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: yolonode_test
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
+
+production:
+  <<: *default
+  database: yolonode_production   
+  username: <%= ENV['PG_USERNAME'] %>
+  password: <%= ENV['PG_PASSWORD'] %>
