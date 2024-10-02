@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get "home/index"
-  
+
   # Define the root path route ("/")
   root "home#index"
 
