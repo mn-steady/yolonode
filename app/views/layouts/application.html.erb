@@ -19,7 +19,21 @@
 
   <body>
     <header>
-      <!-- Your menu bar here -->
+      <nav style="background-color: #333; padding: 10px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <!-- Logo -->
+          <div>
+            <img src="<%= asset_path('yolonode.png') %>" alt="Logo" style="height: 40px;"> 
+          </div>
+
+          <!-- Menu Items -->
+          <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+            <li style="margin-right: 20px;">
+             <!--  <a href="<%= your_login_path %>" style="color: #C1DF03; text-decoration: none;">Login</a> <!-- Replace with your login path -->
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <%= yield %>
