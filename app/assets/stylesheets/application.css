@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+ /* app/assets/stylesheets/navbar.css */
+header {
+    background-color: #333; /* Adjust this to match your desired background color */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #C1DF03; /* Your specified text color */
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline; /* Optional: Add hover effect */
+  }
+  
