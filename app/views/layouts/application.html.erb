@@ -2,7 +2,7 @@
 <html>
   <head>
     <title><%= content_for(:title) || "Yolonode" %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,12 +10,12 @@
     <%= yield :head %>
 
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon"> <!-- Added favicon link -->
+    <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
     <link rel="icon" href="/icon.png" type="image/png">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %> <!-- Use this for Import Maps -->
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
@@ -24,23 +24,10 @@
       Producing blocks on Secret Network since 7/10/2024!
     </div>
 
-    <header>
-      <nav>
-        <div>
-          <!-- Logo -->
-          <div>
-            <img src="<%= asset_path('YoloNode.png') %>" alt="Logo" class="logo"> 
-          </div>
-
-          <!-- Menu Items -->
-          <ul class="menu">
-            <li>
-              <!-- Add any additional menu items here -->
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <!-- New Image Section -->
+    <div class="image-section">
+      <!-- Content can go here if needed -->
+    </div>
 
     <%= yield %>
   </body>
