@@ -1,20 +1,13 @@
 require "active_support/core_ext/integer/time"
 
-# The test environment is used exclusively to run your application's
-# test suite. You never need to work with it otherwise. Remember that
-# your test database is "scratch space" for the test suite and is wiped
-# and recreated between test runs. Don't rely on the data there!
-
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # While tests run files are not watched, reloading is not necessary.
   config.enable_reloading = false
 
-  # Eager loading loads your entire application. When running a single test locally,
-  # this is usually not necessary, and can slow down your test suite. However, it's
-  # recommended that you enable it in continuous integration systems to ensure eager
-  # loading is working properly before deploying your code.
+  # Eager loading loads your entire application. This is usually not necessary
+  # for running tests locally but may be useful in CI.
   config.eager_load = ENV["CI"].present?
 
   # Configure public file server for tests with Cache-Control for performance.
@@ -31,20 +24,17 @@ Rails.application.configure do
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
 
+  # Comment out or remove Active Storage configurations since you're not using it.
   # Store uploaded files on the local file system in a temporary directory.
-  config.active_storage.service = :test
+  # config.active_storage.service = :test
 
-  # Disable caching for Action Mailer templates even if Action Controller
-  # caching is enabled.
+  # Disable caching for Action Mailer templates even if Action Controller caching is enabled.
   config.action_mailer.perform_caching = false
 
   # Tell Action Mailer not to deliver emails to the real world.
-  # The :test delivery method accumulates sent emails in the
-  # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
 
-  # Unlike controllers, the mailer instance doesn't have any context about the
-  # incoming request so you'll need to provide the :host parameter yourself.
+  # Set default URL options for Action Mailer.
   config.action_mailer.default_url_options = { host: "www.example.com" }
 
   # Print deprecation notices to the stderr.
