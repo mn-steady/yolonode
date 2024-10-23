@@ -14,26 +14,47 @@
  *= require_self
  */
 
-/* Navbar Styles */
-header {
-    background-color: #333; 
+/* Banner Styles */
+.banner {
+    background-color: #C1DF03; /* Background color */
+    text-align: center;         /* Center text */
+    padding: 10px;             /* Padding around the text */
+    font-size: 16px;           /* Font size */
+    color: black;              /* Text color */
 }
 
+/* Navbar Styles */
+nav {
+    background-color: #333; /* Background color for the navbar */
+    padding: 10px;          /* Padding for the navbar */
+}
+
+nav > div {
+    display: flex;                  /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center;            /* Center items vertically */
+}
+
+.logo {
+    height: 40px; /* Height for the logo */
+}
+
+/* Menu Styles */
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    list-style: none; /* Remove default list styles */
+    display: flex;    /* Display menu items in a row */
+    margin: 0;       /* Reset margins */
+    padding: 0;      /* Reset padding */
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 20px; /* Space between menu items */
 }
 
 nav ul li a {
-    color: #C1DF03; 
-    text-decoration: none;
-    padding: 10px;
+    color: #C1DF03; /* Text color for menu links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding for links */
 }
 
 nav ul li a:hover {
