@@ -20,7 +20,7 @@ body, html {
     background-color: #C1DF03; /* Background color */
     text-align: center;         /* Center text */
     padding: 10px;             /* Padding around the text */
-    font-size: 16px;           /* Font size */
+    font-size: 1.5rem;           /* Match font size of h3 */
     color: #101213;              /* Text color */
     margin: 0;                 /* Remove any margin */
 }
@@ -34,6 +34,54 @@ body, html {
     width: 100%; /* Full width */
     height: 80vh; /* Take up 80% of the viewport height */
     margin: 0; /* Remove any margin */
+    position: relative; /* Make the container relative for absolute button positioning */
+    padding: 0; /* Remove padding */
+}
+
+/* Button Styles */
+.custom-button {
+    background-color: #C1DF03; /* Yellow background */
+    color: #101213; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size for the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Add space between buttons */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+}
+
+/* Button hover effect */
+.custom-button:hover {
+    background-color: #f1e603; /* Slightly lighter yellow on hover */
+}
+
+/* Button container styles to position buttons at the bottom */
+.button-container {
+    position: absolute; /* Absolute positioning to place at the bottom of the image */
+    bottom: 20px; /* Place the buttons near the bottom */
+    left: 50%; /* Horizontally center */
+    transform: translateX(-50%); /* Adjust position based on width */
+    display: flex; /* Use flexbox to align buttons */
+    justify-content: center; /* Center buttons */
+    flex-wrap: wrap; /* Wrap buttons on mobile */
+}
+
+/* For mobile view */
+@media (max-width: 767px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons on mobile */
+    }
+
+    /* Remove extra space on top and bottom in mobile view */
+    .image-section {
+        height: 100vh; /* Use full viewport height */
+        background-size: cover; /* Ensure the image covers the entire section */
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* Desktop Styles */
@@ -43,15 +91,6 @@ body, html {
         margin: 0 auto; /* Center the section */
         background-color: #101213; /* Set the new background color for sides */
         height: 80vh; /* Adjust height for desktop */
-    }
-}
-
-/* Mobile Styles */
-@media (max-width: 767px) {
-    .image-section {
-        background-color: transparent; /* No side color on mobile */
-        height: 50vh; /* Adjust height for mobile */
-        margin: 0; /* Remove any margin */
     }
 }
 
@@ -80,17 +119,6 @@ body, html {
     margin-bottom: 40px; /* Add space between content sections */
     background-color: #C1DF03; /* Ensure the background color persists */
     border-radius: 8px; /* Optional: Add slight rounding to the edges */
-}
-
-/* Ensure consistency between desktop and mobile */
-@media (min-width: 768px) {
-    .main-section {
-        width: 100%; /* Full width for larger screens */
-    }
-
-    .main-section .content {
-        max-width: 800px; /* Constrain text content width on larger screens */
-    }
 }
 
 /* Heading and Paragraph Font Styles */
@@ -122,29 +150,3 @@ body, html {
     margin-bottom: 10px; /* Adds space between each bullet */
     line-height: 1.6; /* Improve readability */
 }
-
-
-/* Ensure mobile responsiveness */
-@media (max-width: 767px) {
-    .main-section {
-        padding: 15px;
-    }
-
-    .main-section h1 {
-        font-size: 2rem; /* Adjust font size for mobile */
-    }
-
-    .main-section h2 {
-        font-size: 1.75rem;
-    }
-
-    .main-section h3 {
-        font-size: 1.25rem;
-    }
-
-    .main-section p {
-        font-size: 0.9rem; /* Slightly smaller font for mobile */
-    }
-}
-
-
