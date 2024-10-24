@@ -74,7 +74,16 @@ body {
 @media (min-width: 768px) {
     .main-section {
         width: 100%; /* Full width for larger screens */
+        max-width: 1200px; /* Limit the width of the section */
+        margin: 0 auto; /* Center the section */
     }
+}
+
+/* Limit the width of text content while keeping the background yellow */
+.main-section .content {
+    width: 100%;
+    max-width: 800px; /* Maximum width for the text */
+    text-align: center; /* Center the text */
 }
 
 /* Heading and Paragraph Font Styles */
@@ -100,3 +109,25 @@ body {
     text-align: center; /* Center align text */
 }
 
+/* Ensure mobile responsiveness */
+@media (max-width: 767px) {
+    .main-section {
+        padding: 15px;
+    }
+
+    .main-section h1 {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .main-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .main-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .main-section p {
+        font-size: 0.9rem; /* Slightly smaller font for mobile */
+    }
+}
