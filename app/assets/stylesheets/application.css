@@ -38,6 +38,22 @@ body, html {
     padding: 0; /* Remove padding */
 }
 
+/* Main Image Styles */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    width: 100%;
+    height: auto;
+    padding: 20px; /* Add some padding if needed */
+}
+
+.main-image {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within its container without being cut off */
+}
+
 /* Button Styles */
 .custom-button {
     background-color: #C1DF03; /* Yellow background */
