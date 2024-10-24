@@ -199,4 +199,18 @@ body, html {
     line-height: 1.6; /* Improve readability */
 }
 
+/* Social media logo styling */
+.social-logo {
+    width: 60px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Keep it inline with other elements if needed */
+    margin: 10px; /* Adjust spacing around the logo */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Optional: Add hover effect */
+.social-logo:hover {
+    opacity: 0.8; /* Slightly fade the logo on hover */
+}
+
 
