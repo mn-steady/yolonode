@@ -9,8 +9,8 @@ gem "rails", "~> 7.2.1.1"
 # The original asset pipeline for Rails
 gem "sprockets-rails"
 
-#uglifier
-gem 'uglifier'
+# uglifier
+gem "uglifier"
 
 # Use the Puma web server
 gem "puma", ">= 5.0"
