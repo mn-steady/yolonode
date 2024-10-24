@@ -185,17 +185,18 @@ body, html {
     text-align: center; /* Center align text */
 }
 
-/* Custom list to match <h3> size */
+/* Custom list to match <h3> size and center the items */
 .custom-list {
-    list-style-position: inside; /* Makes bullets appear inside the list items */
-    text-align: left; /* Align text to the left */
-    padding-left: 0; /* Remove extra padding */
+    list-style: inside; /* Remove bullet points */
+    padding-left: 0; /* Remove left padding */
+    text-align: center; /* Center the list items */
+    margin: 0; /* Remove default margin */
 }
 
 .custom-list li {
     font-size: 1.5rem; /* Same size as h3 */
-    margin-bottom: 10px; /* Adds space between each bullet */
+    margin-bottom: 10px; /* Adds space between each list item */
     line-height: 1.6; /* Improve readability */
-    text-align: left; /* Ensure each list item is left-aligned */
 }
+
 
