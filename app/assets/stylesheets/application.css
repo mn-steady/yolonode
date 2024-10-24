@@ -152,7 +152,7 @@ body, html {
 
 /* Content within Main Section */
 .main-section .content {
-    max-width: 800px; /* Constrain the width of the text */
+    max-width: 1200px; /* Constrain the width of the text */
     width: 100%;
     text-align: center;
     padding: 20px; /* Padding inside each content section */
