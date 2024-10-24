@@ -213,4 +213,12 @@ body, html {
     opacity: 0.8; /* Slightly fade the logo on hover */
 }
 
+.footer-text {
+    font-size: 0.5rem !important; /* Force the smaller size */
+    color: #101213; /* Ensure the color matches the theme */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some padding */
+}
+
+
 
