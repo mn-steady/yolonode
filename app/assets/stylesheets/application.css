@@ -2,17 +2,17 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
  *= require_tree .
  *= require_self
  */
 
 /* Body styles */
-body {
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Banner Styles */
@@ -61,29 +61,31 @@ body {
     color: #101213; /* Text color */
     width: 100%; /* Full width */
     height: auto; /* Auto height to fit content */
-    padding: 20px; /* Padding for space around text */
+    padding: 20px 0; /* Padding for space around text */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
     box-sizing: border-box;
     margin: 0; /* Remove default margins */
+}
+
+/* Content within Main Section */
+.main-section .content {
+    max-width: 800px; /* Constrain the width of the text */
+    width: 100%;
+    text-align: center;
+    padding: 0 20px; /* Add padding on the sides for mobile */
+    box-sizing: border-box;
 }
 
 /* Ensure consistency between desktop and mobile */
 @media (min-width: 768px) {
     .main-section {
         width: 100%; /* Full width for larger screens */
-        max-width: 1200px; /* Limit the width of the section */
-        margin: 0 auto; /* Center the section */
     }
-}
 
-/* Limit the width of text content while keeping the background yellow */
-.main-section .content {
-    width: 100%;
-    max-width: 800px; /* Maximum width for the text */
-    text-align: center; /* Center the text */
+    .main-section .content {
+        max-width: 800px; /* Constrain text content width on larger screens */
+    }
 }
 
 /* Heading and Paragraph Font Styles */
