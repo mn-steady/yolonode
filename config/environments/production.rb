@@ -17,7 +17,7 @@ Rails.application.configure do
   # config.require_master_key = true
 
   # Enable serving static files from `/public/` folder.
-  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present? || true
+  config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present? || true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -48,7 +48,7 @@ Rails.application.configure do
     .then { |logger| ActiveSupport::TaggedLogging.new(logger) }
 
   # Prepend all log lines with the following tags.
-  config.log_tags = [:request_id]
+  config.log_tags = [ :request_id ]
 
   # Log level set to info, can be configured with ENV variable.
   config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
