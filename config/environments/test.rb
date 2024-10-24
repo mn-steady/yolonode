@@ -29,13 +29,13 @@ Rails.application.configure do
   # config.active_storage.service = :test
 
   # Disable caching for Action Mailer templates even if Action Controller caching is enabled.
-  config.action_mailer.perform_caching = false
+  #config.action_mailer.perform_caching = false
 
   # Tell Action Mailer not to deliver emails to the real world.
-  config.action_mailer.delivery_method = :test
+  #config.action_mailer.delivery_method = :test
 
   # Set default URL options for Action Mailer.
-  config.action_mailer.default_url_options = { host: "www.example.com" }
+  #config.action_mailer.default_url_options = { host: "www.example.com" }
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
