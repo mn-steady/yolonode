@@ -20,7 +20,7 @@ body, html {
     background-color: #C1DF03; /* Background color */
     text-align: center;         /* Center text */
     padding: 10px;             /* Padding around the text */
-    font-size: 1.5rem;           /* Match font size of h3 */
+    font-size: 1.2rem;           /* Match font size of h3 */
     color: #101213;              /* Text color */
     margin: 0;                 /* Remove any margin */
 }
