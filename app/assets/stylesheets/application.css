@@ -27,7 +27,7 @@ body {
 
 /* Image Section Styles */
 .image-section {
-    background-image: url('/assets/YoloNode-Logo-Name-Cropped.png');
+    background-image: url('/assets/YoloNode-Logo-Name-Cropped.png'); /* Semicolon added */
     background-size: contain; /* Make sure the entire image is visible */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-position: center; /* Center the image */
