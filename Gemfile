@@ -18,6 +18,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 # uglifier
 gem "uglifier", ">= 1.3.0"
+# sassc-rails
+gem 'sassc-rails'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
