@@ -16,6 +16,16 @@
     <link rel="apple-touch-icon" href="/icon.png">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <!-- JavaScript function for "Report A Bug" button -->
+    <script>
+      function openMailtoWithTimestamp() {
+        const currentDate = new Date();
+        const timestamp = currentDate.toISOString().split('T')[0]; // YYYY-MM-DD format
+        const mailtoLink = `mailto:steady@yolonode.com?subject=Bug%20Report:%20${timestamp}`;
+        window.location.href = mailtoLink;
+      }
+    </script>
   </head>
 
   <body>
